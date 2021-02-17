@@ -5,18 +5,20 @@ const {
   countCharacters,
   firstCharacter,
   firstCharacters
-} = require("../src/strings");
+} = require("../src/strings"); // import the function from the src file to test file so we can access the functions there and run tests
 
+// describe blocks group the tests for each function
+// it blocks -> call/invoke a function
 describe("sayHello", () => {
-  xit('returns "Hello world!" when passed "world"', () => {
+  it('returns "Hello world!" when passed "world"', () => {
     expect(sayHello("world")).toEqual("Hello, world!");
   });
 
-  xit('returns "Hello MCR Codes!" when passed "MCR Codes"', () => {
+  it('returns "Hello MCR Codes!" when passed "MCR Codes"', () => {
     expect(sayHello("MCR Codes")).toEqual("Hello, MCR Codes!");
   });
 
-  xit('returns "Hello fsghjdfkhgf!" when passed "fsghjdfkhgf"', () => {
+  it('returns "Hello fsghjdfkhgf!" when passed "fsghjdfkhgf"', () => {
     expect(sayHello("fsghjdfkhgf")).toEqual("Hello, fsghjdfkhgf!");
   });
 });
